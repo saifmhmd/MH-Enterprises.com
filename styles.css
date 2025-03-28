@@ -1,0 +1,265 @@
+* { 
+    margin: 0;
+    padding: 0;
+    font-family: "Archivo", sans-serif;
+}
+
+.mail-link {
+    text-decoration: none;
+    color: #f5f5f5;
+    cursor: pointer;
+    transition: all 0.2s ease-in-out;
+}
+
+.mail-link:hover {
+    opacity: 50%;
+}
+
+body {
+    background-color: #f5f5f5;
+}
+
+.wraper {
+    margin: 0 5%;
+}
+
+nav {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin: 0 5%;
+    padding: 10px;
+}
+
+.links {
+    padding-top: 10px;
+}
+
+.logo {
+    height: 70px;
+}
+
+.mail-btn {
+    color: #f5f5f5;
+    background-color: #c30c0c;
+    padding: 10px;
+    border: none;
+    border-radius: 10px;
+}
+
+.background-div {
+    width: 100%;
+    height: 650px; /* Set height */
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+.background-div::before {
+    content: "";
+    position: absolute;
+    width: 100%;
+    height: 650px;
+    background: url('./assets/Bg-image.jpg') center/cover no-repeat;
+    filter: brightness(50%);
+    z-index: -1;
+}
+
+.title {
+    color: #f5f5f5;
+    font-size: clamp(2rem, 4vw, 5rem);
+    margin-left: 5%;
+}
+
+.title-para {
+    width: 50%;
+}
+
+.title-para, .about-para {
+    font-size: clamp(0.8rem, 1.3vw, 2rem);
+    color: #f5f5f5;
+    margin-left: 5%;
+    line-height: 1.5rem;
+    font-weight: 200;
+}
+
+.about {
+    padding: 20px 20px;
+}
+
+.about-title,
+.service-title {
+    font-size: clamp(1rem, 2vw, 3rem);
+    text-align: center;
+    padding: 30px 30px;
+}
+
+
+.about-heading {
+    font-size: clamp(2rem, 3.5vw, 4rem);
+}
+
+.about-para {
+    color: black;
+    margin: 0;
+}
+
+.about-content-container {
+    display: flex;
+    /* align-items: center; */
+    justify-content: space-around;
+    padding: 10px 10px;
+}
+
+.about-image {
+    height: clamp(300px, 28vw, 500px);
+    border: 1px dashed #c30c0c;
+    border-radius: 10px;
+}
+
+.benifits {
+    padding: 20px 20px;
+}
+
+.card-container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    gap: 10px;
+}
+
+.cards {
+    color: #f5f5f5;
+    background-color: #03030f;
+    border: none;
+    padding: 20px;
+    width: 300px;
+}
+
+.bold-text {
+    font-weight: 600;
+}
+
+.services {
+    margin: 10px 10px;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 500px; /* Adjust height */
+    object-fit: cover; /* Crop image to fit */
+}
+
+footer {
+    background-color: #03030f;
+    color: #f5f5f5;
+    padding: 50px 0;
+    margin-top: 30px;
+}
+
+.footer-content-container {
+    display: flex;
+    justify-content: space-around;
+}
+
+i {
+    padding-right: 10px;
+}
+
+.mail-id, .phone {
+    position: relative;
+    top: 10px;
+}
+
+.copyright {
+    text-align: center;
+    position: relative;
+    top: 30px;
+}
+
+@media (max-width: 800px) {
+    .about-content-container {
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        gap: 20px;
+    }
+    .about-title-container {
+        order: 1;
+    }
+    .about-image {
+        order: 2;
+    }
+    .footer-content-container {
+        flex-direction: column;
+        gap: 20px;
+    }
+    .address,
+    .awards {
+        padding-left: 20px;
+    }
+}
+
+@media (max-width: 750px) {
+    .links {
+        display: none;
+    }
+    .title-para {
+        width: 70%;
+    }
+}
+
+@media (max-width: 425px) {
+    .logo {
+        height: 60px;
+    }
+    .mail-btn {
+        font-size: 0.8rem;
+        border: 2px;
+    }
+    .background-div {
+        height: 500px;
+        justify-content: center;
+        align-items: center;
+    }
+    .background-div::before {
+        height: 500px;
+    }
+    .title-para {
+        width: 340px;
+    }
+    .title,
+    .title-para {
+        margin: 0;
+    }
+    .title {
+        font-size: 1.6rem;
+        padding: 10px;
+    }
+    .title-para,
+    .about-para {
+        font-size: 0.9rem;
+        padding: 10px;
+    }
+    .carousel-item img {
+        height: 300px;
+    }
+    .card-container {
+        justify-content: center;
+    }
+    .copyright {
+        font-size: 0.8rem;
+    }
+}
+
+@media (max-width: 320px) {
+    .about-image {
+        height: 250px;
+    }
+    .title-para {
+        width: auto;
+    }
+    .footer-content-container {
+        padding: 30px;
+    }
+}
