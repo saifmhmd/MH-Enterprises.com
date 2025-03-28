@@ -271,6 +271,9 @@ i {
         align-items: center;
         gap: 10px;
     }
+    .counts {
+        font-size: 1rem;
+    }
 }
 
 @media (max-width: 425px) {
@@ -314,8 +317,11 @@ i {
     .copyright {
         font-size: 0.8rem;
     }
+    .operation-content-container {
+        justify-content: center;
+    }
     .operation-para {
-        width: 80%;
+        /* width: 80%; */
     }
     .counts {
         font-size: 0.8rem;
