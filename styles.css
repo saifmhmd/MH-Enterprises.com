@@ -169,9 +169,23 @@ nav {
     margin: 10px 10px;
 }
 
+.service-title {
+    color: red;
+}
+
+.carousel-item img {
+    width: 100%;
+    height: 500px; /* Adjust height */
+    object-fit: cover; /* Crop image to fit */
+}
 .operation-content-container {
     display: flex;
     justify-content: space-evenly;
+}
+
+.team {
+    text-align: center;
+    color: red;
 }
 
 .tech-images {
@@ -185,8 +199,22 @@ nav {
 .counts {
     display: flex;
     justify-content: space-around;
+    flex-wrap: wrap;
+    align-items: center;
     font-size: 1.2rem;
     padding: 20px 20px;
+}
+
+.list {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    gap: 10px;
+}
+
+.fa {
+    font-size: 3rem;
 }
 
 .testimonial-card-container {
@@ -338,6 +366,8 @@ i {
     .counts {
         font-size: 0.8rem;
         gap: 5px;
+        flex-direction: column;
+        gap: 10px;
         justify-content: center;
     }
 }
