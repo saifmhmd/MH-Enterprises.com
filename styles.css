@@ -41,7 +41,7 @@ nav {
 
 .mail-btn {
     color: #f5f5f5;
-    background-color: #c30c0c;
+    background-color: red;
     padding: 10px;
     border: none;
     border-radius: 10px;
@@ -53,6 +53,7 @@ nav {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    align-items: flex-start;
 }
 
 .background-div::before {
@@ -60,7 +61,7 @@ nav {
     position: absolute;
     width: 100%;
     height: 650px;
-    background: url('./assets/Bg-image.jpg') center/cover no-repeat;
+    background: url('./assets/Man.jpg') center/cover no-repeat;
     filter: brightness(50%);
     z-index: -1;
 }
@@ -73,7 +74,15 @@ nav {
 }
 
 .title-para {
-    width: 50%;
+    /* width: 50%; */
+}
+
+.banner-btn {
+    color: #f5f5f5;
+    background-color: red;
+    padding: 10px;
+    border: none;
+    margin-left: 5%;
 }
 
 .title-para,
@@ -99,16 +108,26 @@ nav {
     padding: 30px 30px;
 }
 
+.testimonial-title {
+    color: red;
+}
+
 
 .about-heading,
 .operation-heading {
-    font-size: clamp(2rem, 3.5vw, 4rem);
+    font-size: clamp(1rem, 2vw, 3rem);
+    color: #c30c0c;
 }
 
 .about-para,
 .operation-para {
     color: black;
     margin: 0;
+}
+
+.about-para-2 {
+    font-size: clamp(1.2rem, 2.2vw, 3.5rem);
+    font-weight: 500;
 }
 
 .about-content-container {
@@ -120,27 +139,26 @@ nav {
 
 .about-image {
     height: clamp(300px, 28vw, 500px);
-    border: 1px dashed #c30c0c;
     border-radius: 10px;
 }
 
 .benifits {
     padding: 20px 20px;
-}
-
-.card-container {
     display: flex;
-    justify-content: space-between;
     flex-wrap: wrap;
-    gap: 10px;
+    justify-content: space-around;
 }
 
 .cards {
-    color: #f5f5f5;
-    background-color: #03030f;
-    border: none;
-    padding: 20px;
-    width: 300px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    text-align: center;
+}
+
+.factory {
+    height: 50px;
 }
 
 .bold-text {
@@ -151,15 +169,13 @@ nav {
     margin: 10px 10px;
 }
 
-.carousel-item img {
-    width: 100%;
-    height: 500px; /* Adjust height */
-    object-fit: cover; /* Crop image to fit */
-}
-
 .operation-content-container {
     display: flex;
     justify-content: space-evenly;
+}
+
+.tech-images {
+    height: 280px;
 }
 
 .chairman {
@@ -176,6 +192,7 @@ nav {
 .testimonial-card-container {
     display: flex;
     gap: 10px;
+    /* flex-wrap: wrap; */
 }
 
 .testimonial-card {
@@ -184,21 +201,8 @@ nav {
     align-items: center;
     width: 500px;
     padding: 20px;
-    box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+    /* box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1); */
 
-}
-
-.parle {
-    height: 40px;
-}
-
-.upfield {
-    height: 80px;
-}
-
-.fragata,
-.arlo-pro {
-    height: 50px;
 }
 
 footer {
@@ -293,11 +297,19 @@ i {
         height: 500px;
     }
     .title-para {
-        width: 340px;
+        width: 50%;
+        padding: 0;
+        position: relative;
+        right: 20%;
     }
+    .banner-btn {
+        position: relative;
+        right: 28%;
+    }
+
     .title,
     .title-para {
-        margin: 0;
+        /* margin: 0; */
     }
     .title {
         font-size: 1.6rem;
@@ -306,7 +318,7 @@ i {
     .title-para,
     .about-para {
         font-size: 0.9rem;
-        padding: 10px;
+        /* padding: 10px; */
     }
     .carousel-item img {
         height: 300px;
@@ -331,11 +343,21 @@ i {
 }
 
 @media (max-width: 320px) {
+    .title-para {
+        width: 50%;
+        padding: 0;
+        position: relative;
+        right: 20%;
+    }
+    .banner-btn {
+        position: relative;
+        right: 23%;
+    }
     .about-image {
         height: 250px;
     }
     .title-para {
-        width: auto;
+        /* width: auto; */
     }
     .carousel-item img {
         height: 200px;
